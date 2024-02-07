@@ -1,0 +1,173 @@
+
+body{
+    font-family: Helvetica;
+    background-color: #f0f2f5;
+}
+div{
+    display: block;
+}
+
+#lower_box {
+    font-family: Helvetica;
+    background-color: white;
+    width: inherit;
+    height: 120px;
+    color: #737373;
+    padding: 30px 280px;
+
+    font-family: inherit;
+    font-size: 12px;
+}
+
+#lower_box hr{
+    width: 90%;
+    border: none;
+    border-top: 1px solid lightgrey;
+    opacity: 100%;
+    margin-top: 10px
+}
+
+.lang{
+    width: 82%;
+}
+
+.links{
+    width: 100%;
+    height: fit-content;
+    margin-top: 10px;
+}
+
+li {
+    list-style-type: none;
+    line-height: 1.6;
+    display: inline-block;
+}
+
+.lang li{
+    padding: 0 5px 0 0;
+}
+
+.links li {
+    padding: 0 15px 0 0;
+}
+
+#logo_form{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 43em;
+    padding-bottom: 30px;
+    font-family: Helvetica;
+    font-size: 15pt;
+}
+
+.form_text{ 
+    width: 396px;
+    text-align: center;
+}
+
+#logo_box{
+    width: 500px;
+    margin: 0 110px 150px 0;
+}
+
+#logo_box p{
+    margin:0 0 0 30px;
+    font-size: 26px;
+    line-height: 30px;
+}
+
+.forma_box{ /* box of register*/
+    width: 394px;
+    height: fit-content;
+    border: 2px;
+    border-radius: 5px;
+    background-color: white;
+
+
+    -webkit-box-shadow: 10px 10px 92px -38px rgba(69,69,69,1);
+    -moz-box-shadow: 10px 10px 92px -38px rgba(69,69,69,1);
+    box-shadow: 10px 10px 92px -38px rgba(69,69,69,1);
+
+    padding: 0 8px 20px 8px;
+}
+
+.forma_box hr{
+    width: 90%;
+    border: none;
+    border-top: 1px solid lightgrey;
+    opacity: 80%;
+
+    display: inline-block;
+}
+
+
+
+button{
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 372px;
+    height: 50px;
+    margin: 20px 0 15px 0;
+    cursor: pointer;
+}
+
+button:hover{
+    filter: brightness(95%);
+}
+
+input[type] {
+    padding: 15px;
+    margin: 20px 0 0 0;
+    border: 1px lightgray solid;
+    border-radius: 5px;
+    width: 340px;
+    font-size: 17px;
+}
+
+input[type]:focus{
+    outline-color: dodgerblue;
+}
+
+input[type]:focus::placeholder{
+    color: lightgrey;
+}
+
+#register_butt{
+    background-color: limegreen;
+    width: 60%;
+    height: 50px;
+    display: block;
+    margin: 20px auto 0 auto;
+    font-size: 17px;
+}
+
+#more_lang{
+    width:30px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+    background-color:rgb(220, 220, 220);
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+    text-decoration: underline;
+}
+
+a:active {
+    color: inherit;
+}
