@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    font-family: "Segoe UI";
+}
+
+/* body{
+
+} */
+
+header{
+    background-color: dodgerblue;
+    color: white;
+    font-size: 20px;
+    height: 100px;
+    padding-left: 20px;
+
+    display: inline-flex; align-items: center; width: 99%;
+}
+
+#main {
+    height: fit-content;
+    margin: 50px auto 0 auto;
+    width: 90%;
+}
+
+h1{
+    margin: 0 0 20px 0;
+    color: dimgrey;
+}
+
+.input-box{
+    margin-left: 50px;
+    margin-bottom: 50px;
+
+    display: flex;
+    align-items: center;
+}
+
+.input-field{
+    width: 50%;
+    padding-left: 25px;
+    border-radius: 8px;
+    border: 1px solid lightgrey;
+    font-size: 15px;
+    height: 35px;
+}
+
+.add-button{
+    height: fit-content;
+    margin-left: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    background-color: dodgerblue;
+    color: white;
+
+    font-weight: 600;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tasks{
+    width: inherit;
+    height: fit-content;
+    border: 1px solid lightgrey;
+    border-radius: 7px;
+    padding: 25px 0 25px 0;
+
+}
+
+#myUL{
+    list-style-type: none;
+    width: inherit;
+}
+
+.task{
+    width: inherit;
+    height: fit-content;
+    display: inline-flex;
+
+    margin: 15px 0;
+    align-items: center;
+
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 10px;
+}
+
+.task-new{
+    display: inline-flex;
+    align-items: center;
+    font-family: inherit;
+    font-size: 18px;
+}
+
+.delete_img{
+    margin-left: auto;
+    height: 50px;
+}
+
+
+.checkboxes{
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 1px solid lightgrey;
+    margin-right: 2em;
+}
+
+.checkboxes:checked + span{
+    text-decoration-line: line-through;
+}
