@@ -1,0 +1,18 @@
+<h1>Companies</h1>
+<fieldset style="width:14cm">
+  <label>Company name </label>
+  <input type="text" [(ngModel)]="newCompany">
+  <button (click)="addCompany()">add Company</button>
+</fieldset>
+<ul>
+  <li *ngFor="let company of companies">
+    <a routerLink="{{company.id}}/vacancies" style="margin-right: 10px;">{{company.name}}</a>
+    <button (click)="deleteCompany(company.id)">X</button>
+    <fieldset style="width: 13cm;margin-top: 10px;margin-bottom: 10px;">
+      <label style="margin-right: 10px;">Update company name</label>
+      <input type="text" id="{{company.id}}" [(ngModel)]="newName" style="margin-right: 10px;">
+      <button (click)="updateCompany(company.id)">update Company name</button>
+    </fieldset>
+    <!-- <button (click)="updateCompany(company.id)">update</button> -->
+  </li>
+</ul>

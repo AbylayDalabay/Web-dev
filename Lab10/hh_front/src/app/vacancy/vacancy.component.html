@@ -1,0 +1,20 @@
+<fieldset style="width:14cm">
+  <label>Vacancy name </label>
+  <input type="text" [(ngModel)]="newVacancy">
+  <button (click)="addVacancy()">add Vacancy</button>
+</fieldset>
+<div *ngIf="vacancies.length != 0">
+  <ul>
+    <li *ngFor="let vacancy of vacancies">
+      {{vacancy.name}} <button (click)="deleteVacancy(vacancy.id)">X</button>
+      <fieldset style="width: 13cm;margin-top: 10px;margin-bottom: 10px;">
+        <label style="margin-right: 10px;">Update Vacancy name</label>
+        <input type="text" [(ngModel)]="newName" style="margin-right: 10px;">
+        <button (click)="updateVacancy(vacancy.id)">update Vacancy name</button>
+      </fieldset>
+    </li>
+  </ul>
+</div>
+<div *ngIf="vacancies.length == 0">
+  <h1>No vacancies</h1>
+</div>
